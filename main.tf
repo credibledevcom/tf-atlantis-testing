@@ -7,7 +7,7 @@ terraform {
     }
 
     backend "azurerm" {
-        resource_group_name  = "rg-tfstate2"
+        resource_group_name  = "rg-tfstate23"
         storage_account_name = "sathecdtfstate"
         container_name       = "tfstate"
         key                  = "certranker-prod.tfstate"
