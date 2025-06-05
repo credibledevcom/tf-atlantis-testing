@@ -7,7 +7,7 @@ terraform {
     }
 
     backend "azurerm" {
-        resource_group_name  = "rg-tfstate232"
+        resource_group_name  = "rg-tfstate2323"
         storage_account_name = "sathecdtfstate"
         container_name       = "tfstate"
         key                  = "certranker-prod.tfstate"
@@ -16,6 +16,5 @@ terraform {
 }
 provider "azurerm" {
     features {}
-    subscription_id = var.azure_subscription_id
     storage_use_azuread = true
 }
