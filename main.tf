@@ -32,6 +32,6 @@ resource "azurerm_storage_account" "atlantis" {
   account_replication_type = "LRS"
 
   tags = {
-    environment = "atlantxis"
+    environment = "atlantis"
   }
 }
