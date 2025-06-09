@@ -10,7 +10,7 @@ terraform {
         resource_group_name  = "rg-tfstate"
         storage_account_name = "sathecdtfstate"
         container_name       = "tfstate"
-        key                  = "certranker-prod.tfstate"
+        key                  = "atlantis-test.tfstate"
         use_azuread_auth = true
     }
 }
@@ -20,18 +20,18 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-atlantis2"
+  name     = "rg-atlantis222"
   location = "Central US"
 }
 
 resource "azurerm_storage_account" "atlantis" {
-  name                     = "satlantis2333444555"
+  name                     = "satlantis5555555"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = azurerm_resource_group.rg.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
   tags = {
-    environment = "atlantis"
+    environment = "atlantxis"
   }
 }
